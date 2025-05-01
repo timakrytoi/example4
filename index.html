@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafit - Premium Fitness Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="signup-section" id="signup">
+        <div class="signup-container">
+            <h2>Start Your Fitness Journey Today</h2>
+            <p>Join Grafit Gym and get your first week free!</p>
+            
+            <form id="signup-form" class="signup-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="membership">Membership Type</label>
+                    <select id="membership" name="membership" required>
+                        <option value="">Select a plan</option>
+                        <option value="basic">Basic ($29/month)</option>
+                        <option value="standard">Standard ($49/month)</option>
+                        <option value="premium">Premium ($79/month)</option>
+                        <option value="pt">Personal Training Package ($199/month)</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-signup">Get Started</button>
+                <p class="form-disclaimer">By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+            </form>
+        </div>
+    </section>
+    <header>
+        <div class="logo">GRAFIT</div>
+        <nav>
+            <ul>
+                <li><a href="">Classes</a></li>
+                <li><a href="">Trainers</a></li>
+                <li><a href="">Membership</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <h1>Transform Your Body, Elevate Your Life</h1>
+        <p>At Grafit, we believe fitness should be challenging yet rewarding, intense yet enjoyable. Join our community and start your transformation today.</p>
+        <button class="btn-join">Join Now</button>
+    </section>
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-dumbbell"></i>
+            </div>
+            <h3>World-Class Equipment</h3>
+            <p>State-of-the-art fitness equipment from leading brands to help you achieve your goals.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <h3>Expert Trainers</h3>
+            <p>Certified professionals dedicated to helping you maximize your potential.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3>Diverse Classes</h3>
+            <p>From HIIT to yoga, we offer classes for all fitness levels and preferences.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Grafit Gym. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img class="tik-tok" width="3%" height="3%" src="https://pngicon.ru/file/uploads/Logotip-Tik-tok.png"></img></a>
+            <a href="#"><img class="instagram" width="3%" height="3%" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"></img></a>
+            <a href="#"><img class="vk" width="3%" height="3%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/1200px-VK_Compact_Logo_%282021-present%29.svg.png"></img></a>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+:root {
+--primary: #2c3e50;
+--secondary: #e74c3c;
+--accent: #f39c12;
+--light: #ecf0f1;
+--dark: #1a252f;
+}     
+
+body {
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+padding: 0;
+color: var(--dark);
+}
+        
+header {
+background-color: var(--primary);
+color: white;
+padding: 1rem 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width:90%;
+z-index: 100;
+}
+        
+.logo {
+font-size: 2rem;
+font-weight: 700;
+color: white;
+}
+        
+nav ul {
+display: flex;
+list-style: none;
+}
+        
+nav ul li {
+margin-left: 2rem;
+}
+        
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s;
+}
+        
+nav ul li a:hover {
+color: var(--accent);
+}
+        
+.hero {
+height: 100vh;
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('gym-hero.jpg');
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+padding: 0 10%;
+}
+        
+.hero h1 {
+font-size: 3.5rem;
+margin-bottom: 1rem;
+}
+        
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+max-width: 700px;
+}
+        
+.btn, .btn-join, .sign-up-btn, .close-sign-up-section {
+background-color: var(--secondary);
+color: white;
+padding: 0.8rem 2rem;
+border: none;
+border-radius: 5px;
+font-weight: 600;
+text-transform: uppercase;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+        
+.btn:hover, .btn-join:hover, .sign-up-btn:hover, .close-sign-up-section:hover {
+background-color: #c0392b;
+}
+        
+.features {
+padding: 5rem 10%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('gym-hero.jpg');
+gap: 2rem;
+}
+
+.feature-card {
+ text-align: center;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+background: white;
+transition: transform 0.3s;
+}
+        
+.feature-card:hover {
+transform: translateY(-10px);
+}
+        
+.feature-icon {
+font-size: 3rem;
+color: var(--secondary);
+margin-bottom: 1rem;
+}
+        
+footer {
+background-color: var(--primary);
+color: white;
+text-align: center;
+padding: 2rem;
+}
+
+.signup-section {
+    display: none;
+    flex-direction: column;
+    background-color: var(--light);
+    padding: 4rem 10%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+}
+
+.signup-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.signup-section h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.signup-section p {
+    color: var(--dark);
+    margin-bottom: 2rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-signup {
+    background-color: var(--secondary);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.form-disclaimer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.form-disclaimer a {
+    color: var(--secondary);
+}
